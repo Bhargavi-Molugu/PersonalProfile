@@ -1,0 +1,414 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  background-color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  /* margin: 1rem 0 1rem 0;*/
+}
+#nav-section {
+  font-family: inherit;
+  background-color: #161515;
+  width: 30%;
+  float: left;
+  text-align: left;
+  position: fixed;
+  height: 100%;
+  padding: 5rem 1rem 2rem 1rem;
+  box-sizing: border-box;
+}
+.content-section {
+  float: right;
+  width: 70%;
+  font-family: inherit;
+}
+
+.nav-div {
+  margin: 1rem;
+}
+.nav-profile {
+  /* padding: 1rem; */
+  text-align: center;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: solid 4px rgba(255, 174, 0, 0.797);
+  box-sizing: border-box;
+}
+.nav-profile h1 {
+  font-size: 20px;
+  padding-bottom: 0.25rem;
+  padding-top: 0.5rem;
+  font-weight: bold;
+}
+.nav-profile p {
+  font-size: 13px;
+  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+}
+.nav-div ul {
+  padding: 1rem;
+  list-style: none;
+}
+
+.nav-div ul li {
+  background-color: #565353;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-radius: 20px;
+}
+.nav-div a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.nav-div ul li:hover {
+  background-color: rgba(255, 174, 0, 0.797);
+  cursor: pointer;
+}
+.nav-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  float: right;
+  padding: 2rem;
+  display: none;
+}
+.nav-btn::after {
+  clear: both;
+}
+.nav-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+#content {
+  margin: 5rem;
+  padding: 5rem;
+  padding-top: 8rem;
+}
+#content div h2 {
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+#content div h3 {
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 25px;
+}
+#content div h3 span {
+  color: rgb(255, 179, 0);
+}
+#content div p {
+  font-size: 16px;
+  padding-bottom: 1.5rem;
+}
+#content div a {
+  text-decoration: none;
+  color: white;
+  background-color: #565353;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 15px;
+}
+#content div a:hover {
+  background-color: rgba(255, 174, 0, 0.797);
+  cursor: pointer;
+}
+#aboutme {
+  clear: both;
+  margin: 2rem;
+  padding: 4rem;
+}
+#aboutme h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+#aboutme span {
+  color: rgba(255, 174, 0, 0.797);
+}
+#aboutme div {
+  text-align: left;
+  padding-top: 0.5rem;
+  margin-top: 2rem;
+}
+#aboutme h3 {
+  margin-bottom: 2rem;
+}
+#aboutme a {
+  text-decoration: none;
+  color: white;
+  background-color: #565353;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+}
+#aboutme a:hover {
+  background-color: rgba(255, 174, 0, 0.797);
+  cursor: pointer;
+}
+hr {
+  border-color: gray;
+}
+#education {
+  margin: 2rem;
+  padding: 4rem;
+}
+#education h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+#education span {
+  color: rgba(255, 174, 0, 0.797);
+}
+
+#education div {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+#education ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 3rem;
+  margin: 2rem;
+}
+#education li {
+  padding-left: 1rem;
+  border-left: 1px solid white;
+  position: relative;
+}
+#education i {
+  position: absolute;
+  left: -18px;
+  font-size: px;
+  top: -13px;
+  background-color: rgba(255, 174, 0, 0.797);
+  border-radius: 50px;
+  padding: 0.5rem;
+  color: white;
+}
+#education li span {
+  color: white;
+  font-size: 12px;
+  background-color: #565353;
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  /*float: left;*/
+  margin-left: 0.5rem;
+  position: absolute;
+  left: 16px;
+  top: -10px;
+}
+#education h3 {
+  /*clear: left;*/
+  margin: 1rem;
+  text-align: left;
+  padding-top: 0.5rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+#education p {
+  text-align: left;
+  font-size: 14px;
+}
+#portfolio {
+  margin: 2rem;
+  padding: 4rem;
+}
+#portfolio h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+#portfolio span {
+  color: rgba(255, 174, 0, 0.797);
+}
+#portfolio div {
+  margin: 2rem 0 2rem 0;
+}
+#portfolio ul {
+  list-style: none;
+  padding-top: 1rem;
+}
+.border-list {
+  padding: 1rem 0 1rem 1rem;
+  border-left: 1px solid white;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.border-list h3 {
+  margin-bottom: 1rem;
+  color: rgba(255, 174, 0, 0.797);
+  font-size: 20px;
+  font-weight: bold;
+}
+#contact {
+  margin: 2rem;
+  padding: 4rem;
+}
+#contact h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+#contact div {
+  margin: 3rem;
+  text-align: left;
+}
+#contact h3 {
+  padding: 1rem;
+  font-weight: bold;
+}
+#contact p {
+  padding: 1rem;
+}
+#contact i {
+  padding: 0.15rem;
+  color: rgba(255, 174, 0, 0.797);
+}
+
+#portfolio ul.features {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+.features li {
+  margin-bottom: 0.5rem;
+  font-size: 13px;
+}
+@media (max-width: 48rem) {
+  #nav-section {
+    display: none;
+  }
+  .content-section {
+    float: none;
+    width: 100%;
+    clear: both;
+  }
+  .nav-btn {
+    display: flex;
+  }
+  .nav-btn:after {
+    clear: both;
+  }
+
+  #education ul {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin:1rem;
+  }
+  #education,
+  #content,
+  #contact,
+  #portfolio,
+  #aboutme {
+    margin: 2rem 0 0;
+    padding:0 0.5rem;
+  }
+  #contact div {
+    margin: 0;
+    padding: 1rem;
+  }
+  #nav-section.show {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+  .nav-profile {
+    display: none;
+  }
+}
